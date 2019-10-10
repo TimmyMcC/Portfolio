@@ -3,16 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>HTML Wireframe</title>
+    <title>Portfolio HTML Wireframe</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <section class="headImage">
-      <h2 class="imagePlaceholder">Gray is an image placeholder</h2>
-      <h1 class="headline1 headline">Hello there. My name is<br>Tim McCaffrey.</h1>
-      <h3 class="headline2 headline">I’m on my way to becoming a full-stack developer while
-          enrolled in Thinkful's Engineering Flex Program.</h3>
-    </section>
+    <header role="banner" class="headImage">
+      <h1 class="headline1 headline">Hello there. My name is Tim McCaffrey.</h1>
+      <h3 class="headline2 headline">I’m on my way to becoming a full-stack developer while enrolled in Thinkful's Engineering Flex Program.</h3>
+    </header>
+    <nav class="navbar">
+      <ul class="navLinks" style="list-style-type:none">
+        <li class="navItem">Home</li>
+        <li class="navItem">Web Apps</li>
+        <li class="navItem">Group 2</li>
+        <li class="navItem">Group 3</li>
+        <li class="navItem">Group 4</li>
+      </ul>
+      <div class="hamburgerMenu" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </nav>
     <section class="inner">
       <section class="bio">
         <p class="bio1 bioGraph">Whether it’s cooking a delicious meal on the fly, coming up with an innovative solution for a problem around the house or building a Lego tower with my son, I have an innate need to create. I’m a big proponent of doing things the way they are meant to be done, but in a way that doesn’t hinder creativity. I place a high value on efficiency and consistency. Seeing something I’ve coded not just working, but working well, is highly fulfilling.</p>
@@ -24,6 +37,14 @@
       <section class="tiles">
         <article class="nflQuiz project">
           <h3 class="projectTitle">NFL Quiz</h3>
+          <div class="images">
+            <img  class="startQuiz screenShot" src="Start_quiz.jpg" alt="Screenshot of the start screen, featuring the NFL shield logo.">
+          <img class="question1 screenShot" src="Question_6.jpg" alt="Screenshot of a quiz question, featuring Browns fans with bags over their heads.">
+          </div>
+          <p class="description info">A short (and quite difficult) 7-question quiz covering individual/team statistics and league history.</p>
+          <p class="tech info">Technologies used: HTML, CSS, jQuery.</p>
+          <p class="livelink info">Take the quiz <a href="https://timmymcc.github.io/NFLquizApp/index.html">here</a>.</p>
+          <p class="codelink info">View the code <a href="https://github.com/TimmyMcC/NFLquizApp">here</a>.</p>
         </article>
         <article class="TBD project">
           <h3 class="projectTitle">Project No.2</h3>
@@ -36,5 +57,20 @@
         </article>
       </section>
     </section>
+    <footer role="banner">
+        <ul class="social" style="list-style-type:none">
+        <li><i class="fab fa-linkedin"></i></li>
+        <li><i class="fab fa-github"></i></li>
+        <li><i class="fas fa-envelope"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+      </ul>
+    </footer>
+    <script src="https://kit.fontawesome.com/2af1e7cf6d.js" crossorigin="anonymous"></script>
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+    </script>
   </body>
 </html>
