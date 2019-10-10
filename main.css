@@ -1,100 +1,162 @@
 @media screen and (min-width: 200px) {
-* {
-    box-sizing: border-box;
-    margin: 0;
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .headImage {
+        text-align: left;
+        color: white;
+        background-color: gray;
+        width: 100%;
+        padding: 0.75em 1.25em;
+    }
+
+    .headline1 {
+        padding-top: 1.5em;
+    }
+
+    .headline2 {
+        margin-top: 1.25em;
+        padding-bottom: 48px;
+    }
+
+    .inner {
+        padding: 0 1.25em;
+    }
+
+    .bio1 {
+        margin-top: 1.25em;
+    }
+
+    .bio2 {
+        margin-top: 1em;
+    }
+
+    .bioGraph {
+        text-indent: 1em;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        background: black;
+        height: 40px;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        padding: 4px 10px 0 0;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 32px;
+        height: 4px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+        transform: rotate(-45deg) translate(-7px, 6px);
+    }
+  
+    .change .bar2 {opacity: 0;}
+  
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -6px);
+        transform: rotate(45deg) translate(-6px, -6px);
+    }
+
+    .project {
+        margin: 1em auto;
+        width: 320px;
+        height: 500px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .projectTitle {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .projectCategory {
+        margin: 20px auto 10px;
+    }
+
+    .images {
+        display: inline;
+    }
+
+    .screenShot {
+        width: 155px;
+    }
+
+    .startQuiz {
+        margin-left: 2px;
+    }
+
+    .info {
+        margin: 0.5em 1em;
+    }
+
+    .description {
+        padding-top: 0.25em;
+    }
+
+    footer {
+        width: 100%;
+        height: 30px;
+        background-color: black;
+        color: white;
+        display: block;
+        margin: 1em auto;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 7px 0 0 0;
+    }
 }
 
-.headImage {
-    text-align: center;
-    color: white;
-    background-color: gray;
-    width: 100%;
-}
-
-.imagePlaceholder {
-    padding-top: 10px;
-}
-
-.headline2 {
-    margin-top: 1.25em;
-    padding-bottom: 10px;
-}
-
-.inner {
-    padding: 0 1.25em;
-}
-
-.headImage {
-    padding: 0.75em 1.25em;
-    margin-bottom: 20px;
-}
-
-.bio2 {
-    margin-top: 1em;
-}
-
-.bioGraph {
-    text-indent: 1em;
-}
-
-.tiles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.project {
-    margin: 1em auto;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 3px;
-    position: relative;
-    padding-top: 90%;
-}
-
-.projectTitle {
-    position: absolute;
-    top: 45%;
-    left: 35%;
-}
-
-.projectCategory {
-    margin: 20px auto 10px;
-}
-}
-
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 720px) {
     * {
         box-sizing: border-box;
         margin: 0;
     }
     
     .headImage {
-        text-align: center;
+        text-align: left;
         color: white;
         background-color: gray;
         width: 100%;
+        padding: 0.75em 1.25em;
     }
     
-    .imagePlaceholder {
-        padding-top: 10px;
+    .headline1 {
+        padding-top: 1.5em;
     }
     
     .headline2 {
-        padding-bottom: 10px;
+        margin-top: 1.25em;
+        padding-bottom: 48px;
     }
     
     .inner {
         padding: 0 1.25em;
     }
     
-    .headImage {
-        padding: 0.75em 1.25em;
-        margin-bottom: 20px;
+    .bio1 {
+        margin-top: 1.25em;
     }
     
     .bio2 {
@@ -105,33 +167,244 @@
         text-indent: 1em;
     }
     
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        background: black;
+        height: 40px;
+    }
+
+    .navLinks {
+        display: none;
+    }
+    
+    .hamburgerMenu {
+        display: block;
+        padding: 4px 10px 0 0;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 32px;
+        height: 4px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+    
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+        transform: rotate(-45deg) translate(-7px, 6px);
+    }
+      
+    .change .bar2 {opacity: 0;}
+      
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -6px);
+        transform: rotate(45deg) translate(-6px, -6px);
+    }
+
     .tiles {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        justify-content: space-evenly;
     }
     
     .project {
-        margin: 1em auto;
-        text-align: center;
-        min-width: 200px;
-        height: 100%;
+        margin: 1em 0.5em;
+        width: 320px;
+        height: 500px;
         border: 1px solid black;
         border-radius: 3px;
-        position: relative;
-        padding-top: 90%;
     }
     
-    /*.projectTitle {
-        position: absolute;
-        top: 45%;
-        left: 35%;
-    }*/
+    .projectTitle {
+        text-align: center;
+        margin: 10px 0;
+    }
     
     .projectCategory {
-        margin: 20px auto 10px;
+        margin: 20px 0 10px;
     }
+    
+    .images {
+        display: inline;
     }
+    
+    .screenShot {
+        width: 155px;
+    }
+    
+    .startQuiz {
+        margin-left: 2px;
+    }
+    
+    .info {
+        margin: 0.5em 1em;
+    }
+    
+    .description {
+        padding-top: 0.25em;
+    }
+
+    footer {
+        width: 100%;
+        height: 30px;
+        background-color: black;
+        color: white;
+        display: block;
+        margin: 1em auto;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 7px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1048px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+     }
+        
+     .headImage {
+        text-align: left;
+        color: white;
+        background-color: gray;
+        width: 100%;
+        padding: 0.75em 1.25em;
+    }
+        
+    .headline1 {
+            padding-top: 1.5em;
+    }
+        
+    .headline2 {
+        margin-top: 1.25em;
+        padding-bottom: 48px;
+    }
+        
+    .inner {
+        padding: 0 1.25em;
+    }
+        
+    .bio1 {
+        margin-top: 1.25em;
+    }
+        
+    .bio2 {
+        margin-top: 1em;
+    }
+        
+    .bioGraph {
+        text-indent: 1em;
+    }
+        
+   .navbar {
+        background: black;
+        height: 40px;
+    }
+
+    .navLinks {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 2em;
+    }
+
+    .navItem {
+        margin-left: 2em;
+    }
+        
+    .hamburgerMenu {
+        display: none;
+    }
+        
+    .bar1, .bar2, .bar3 {
+        width: 32px;
+        height: 4px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+        
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+        transform: rotate(-45deg) translate(-7px, 6px);
+    }
+          
+    .change .bar2 {opacity: 0;}
+          
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -6px);
+        transform: rotate(45deg) translate(-6px, -6px);
+    }
+    
+    .tiles {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+        
+    .project {
+        margin: 1em 0.5em;
+        width: 320px;
+        height: 500px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+        
+    .projectTitle {
+        text-align: center;
+        margin: 10px 0;
+    }
+        
+    .projectCategory {
+        margin: 20px 0 10px;
+    }
+        
+    .images {
+        display: inline;
+    }
+        
+    .screenShot {
+        width: 155px;
+    }
+        
+    .startQuiz {
+        margin-left: 2px;
+    }
+        
+    .info {
+        margin: 0.5em 1em;
+    }
+        
+    .description {
+        padding-top: 0.25em;
+    }
+
+    footer {
+        width: 100%;
+        height: 30px;
+        background-color: black;
+        color: white;
+        display: block;
+        margin: 1em auto;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 7px 0 0 0;
+        margin: auto 100px
+    }
+}
