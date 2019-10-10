@@ -116,7 +116,7 @@
         background-color: black;
         color: white;
         display: block;
-        margin: 1em auto;
+        margin: 1em auto 0;
     }
 
     .social {
@@ -253,7 +253,7 @@
         background-color: black;
         color: white;
         display: block;
-        margin: 1em auto;
+        margin: 1em auto 0;
     }
 
     .social {
@@ -396,7 +396,7 @@
         background-color: black;
         color: white;
         display: block;
-        margin: 1em auto;
+        margin: 1em auto 0;
     }
 
     .social {
