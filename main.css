@@ -32,12 +32,20 @@
     display: none;
 }
 
+a:link {
+    color: #D4D0CF;
+}
+
+a:visited {
+    color: #FF7740;
+}
+
 a:hover, a:focus {
     cursor: pointer;
     color: #00E1FF;
 }
 
-a:visited {
+a:active {
     color: #FF7740;
 }
 
@@ -141,10 +149,6 @@ a:visited {
         left: 0px;
         top: 0px;
         margin: 0;
-    }
-
-    a:link {
-        color: #D4D0CF;
     }
 
     p > a:link {
@@ -339,9 +343,6 @@ a:visited {
         margin: 0;
     }
 
-    a:link {
-        color: #D4D0CF;
-    }
 
     p > a:link {
         color: #1456CC;
@@ -546,9 +547,6 @@ a:visited {
         margin: 0;
     }
 
-    a:link {
-        color: #D4D0CF;
-    }
 
     p > a:link {
         color: #1456CC;
