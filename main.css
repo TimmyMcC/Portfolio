@@ -135,7 +135,8 @@ a:active {
 
     #ctn {
         position: relative;
-        height: 60px;
+        height: 45px;
+        margin-top: 30px;
     }
       
     #ctn a {
@@ -227,6 +228,7 @@ a:active {
 
     .description {
         padding-top: 0.25em;
+        text-indent: 1em;
     }
 
     .footer {
@@ -328,7 +330,8 @@ a:active {
 
     #ctn {
         position: relative;
-        height: 60px;
+        height: 45px;
+        margin-top: 30px;
     }
       
     #ctn a {
@@ -435,6 +438,7 @@ a:active {
     
     .description {
         padding-top: 0.25em;
+        text-indent: 1em;
     }
 
     .footer {
@@ -533,7 +537,8 @@ a:active {
 
     #ctn {
         position: relative;
-        height: 60px;
+        height: 45px;
+        margin-top: 30px;
     }
       
     #ctn a {
@@ -608,7 +613,7 @@ a:active {
         
     .projectCategory {
         position: relative;
-        margin: 20px 0 10px;
+        margin: 20px 0 0;
     }
 
     .projectCategory a {
@@ -635,6 +640,7 @@ a:active {
         
     .description {
         padding-top: 0.25em;
+        text-indent: 1em;
     }
 
     .footer {
