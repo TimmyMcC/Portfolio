@@ -6,21 +6,24 @@
     <title>Portfolio HTML Wireframe</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header role="banner" class="headImage">
-      <h1 class="headline1 headline">Hello there. My name is Tim McCaffrey.</h1>
-      <h3 class="headline2 headline">I’m on my way to becoming a full-stack developer while enrolled in Thinkful's Engineering Flex Program.</h3>
+    <header role="banner" class="header">
+        <img class="headImage" src="MKE-Skyline-wide-crop.jpg" alt="image of Milwaukee's lakefront skyline shot from a drone out over Lake Michigan">
+        <h1 class="headline1 headline">Hi. I'm Tim McCaffrey.</h1>
+        <h3 class="headline2 headline">And I’m on my way to becoming a full-stack developer while enrolled in Thinkful's Engineering Flex Program.</h3>
     </header>
-    <nav class="navbar">
+    <nav id="navbar" class="navbar content">
       <ul class="navLinks" style="list-style-type:none">
-        <li class="navItem">Home</li>
-        <li class="navItem">Web Apps</li>
-        <li class="navItem">Group 2</li>
-        <li class="navItem">Group 3</li>
-        <li class="navItem">Group 4</li>
+        <li class="navItem"><a href="index.html">Home</a></li>
+        <li class="navItem"><a href="#webApps">Web Apps</a></li>
+        <li class="navItem future">Group 2</li>
+        <li class="navItem future">Group 3</li>
+        <li class="navItem future">Group 4</li>
       </ul>
-      <div class="hamburgerMenu" onclick="myFunction(this)">
+      <div class="hamburgerMenu" onclick="burgerFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
@@ -28,10 +31,11 @@
     </nav>
     <section class="inner">
       <section class="bio">
-        <p class="bio1 bioGraph">Whether it’s cooking a delicious meal on the fly, coming up with an innovative solution for a problem around the house or building a Lego tower with my son, I have an innate need to create. I’m a big proponent of doing things the way they are meant to be done, but in a way that doesn’t hinder creativity. I place a high value on efficiency and consistency. Seeing something I’ve coded not just working, but working well, is highly fulfilling.</p>
-        <p class="bio2 bioGraph">When I’m not coding, I enjoy going on walks down at the lakefront, meeting friends at the beer garden, playing with/teaching my 2-year-old son and perusing local farmers' markets. I’ve also been known to watch some sports from time to time and even catch the occasional movie with my wife.</p>
+        <p class="bio1 bioGraph">Whether it’s cooking a delicious meal on the fly, coming up with an innovative solution for a problem around the house or building a Lego tower with my son, I have an innate need to create. I’m a big proponent of doing things the way they are meant to be done, but in a way that doesn’t hinder ingenuity. I place a high value on efficiency and consistency. Seeing something I’ve coded not just working, but working well, is highly fulfilling.</p>
+        <p class="bio2 bioGraph">When I’m not coding, I enjoy going on walks down at the lakefront, meeting friends at the beer garden, playing with/teaching my son and perusing local farmers' markets. I’ve also been known to watch some sports from time to time and even catch the occasional movie with my wife.</p>
       </section>
-      <div>
+      <div id="ctn">
+        <a name="webApps">&nbsp;</a>
         <h2 class="projectCategory">Web Apps</h2>
       </div>
       <section class="tiles">
@@ -59,17 +63,31 @@
     </section>
     <footer role="banner" class="footer">
         <ul class="social" style="list-style-type:none">
-        <li><i class="fab fa-linkedin"></i></li>
-        <li><i class="fab fa-github"></i></li>
-        <li><i class="fas fa-envelope"></i></li>
-        <li><i class="fab fa-twitter"></i></li>
-        <li><i class="fab fa-instagram"></i></li>
+        <li><a href="https://linkedin.com/in/tim-mccaffrey-8aa10052"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/TimmyMcC"><i class="fab fa-github"></i></a></li>
+        <li><a href="mailto:thm719@yahoo.com"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://twitter.com/Timmy_McTweets"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://instagram.com/tim_tj_junior"><i class="fab fa-instagram"></i></a></li>
       </ul>
     </footer>
     <script src="https://kit.fontawesome.com/2af1e7cf6d.js" crossorigin="anonymous"></script>
     <script>
-        function myFunction(x) {
+        function burgerFunction(x) {
           x.classList.toggle("change");
+        }
+    </script>
+    <script>
+        window.onscroll = function() {navBarFunction()};
+            
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+            
+        function navBarFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
         }
     </script>
   </body>
