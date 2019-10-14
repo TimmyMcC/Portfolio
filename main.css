@@ -133,20 +133,20 @@ a:active {
         display: none;
     }
 
-    #ctn {
+    #targetAdjust1 {
         position: relative;
         height: 45px;
         margin-top: 30px;
     }
       
-    #ctn a {
+    #targetAdjust1 a {
         position: absolute;
         left: 0px;
         top: -95px;
     }
       
       
-    #ctn .projectCategory {
+    #targetAdjust1 .projectCategory {
         position: absolute;
         left: 0px;
         top: 0px;
@@ -328,20 +328,20 @@ a:active {
         display: none;
     }
 
-    #ctn {
+    #targetAdjust1 {
         position: relative;
         height: 45px;
         margin-top: 30px;
     }
       
-    #ctn a {
+    #targetAdjust1 a {
         position: absolute;
         left: 0px;
         top: -95px;
     }
       
       
-    #ctn .projectCategory {
+    #targetAdjust1 .projectCategory {
         position: absolute;
         left: 0px;
         top: 0px;
@@ -535,20 +535,20 @@ a:active {
         display: none;
     }
 
-    #ctn {
+    #targetAdjust1 {
         position: relative;
         height: 45px;
         margin-top: 30px;
     }
       
-    #ctn a {
+    #targetAdjust1 a {
         position: absolute;
         left: 0px;
         top: -95px;
     }
       
       
-    #ctn .projectCategory {
+    #targetAdjust1 .projectCategory {
         position: absolute;
         left: 0px;
         top: 0px;
