@@ -120,7 +120,8 @@ a:active {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        margin-right: 20px;
+        margin-left: 10px;
+        padding-right: 36px;
         padding-bottom: 3px;
     }
 
@@ -312,7 +313,8 @@ a:active {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        margin-right: 20px;
+        margin-left: 15px;
+        padding-right: 36px;
         padding-bottom: 3px;
     }
 
@@ -516,7 +518,8 @@ a:active {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        margin-right: 20px;
+        margin-left: 20px;
+        padding-right: 36px;
         padding-bottom: 3px;
     }
 
