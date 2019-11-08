@@ -113,6 +113,10 @@ a:active {
         height: 40px;
         margin-bottom: 32px;
     }
+    
+    a {
+        text-decoration: none;
+    }
 
     .navLinks {
         color: #D4D0CF;
@@ -210,9 +214,9 @@ a:active {
         margin: 20px auto 10px;
     }
 
-    .images {
+    /*.images {
         display: inline;
-    }
+    }*/
 
     .screenShot {
         width: 132px;
@@ -420,9 +424,9 @@ a:active {
         top: -60px;
     }
     
-    .images {
+    /*.images {
         display: inline;
-    }
+    }*/
     
     .screenShot {
         width: 155px;
@@ -622,9 +626,9 @@ a:active {
         top: -60px;
     }
         
-    .images {
+    /*.images {
         display: inline;
-    }
+    }*/
         
     .screenShot {
         width: 155px;
